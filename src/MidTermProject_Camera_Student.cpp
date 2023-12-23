@@ -10,8 +10,8 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/features2d.hpp>
-#include <opencv2/xfeatures2d.hpp>
-#include <opencv2/xfeatures2d/nonfree.hpp>
+// #include <opencv2/xfeatures2d.hpp>
+// #include <opencv2/xfeatures2d/nonfree.hpp>
 
 #include "dataStructures.h"
 #include "matching2D.hpp"
@@ -59,10 +59,15 @@ int main(int argc, const char *argv[])
         //// STUDENT ASSIGNMENT
         //// TASK MP.1 -> replace the following code with ring buffer of size dataBufferSize
 
-        // push image into data frame buffer
+        //create the frame to add to the buffer
         DataFrame frame;
         frame.cameraImg = imgGray;
+
+        if (dataBuffer.size() >= dataBufferSize)
+            dataBuffer.erase(dataBuffer.begin());
+
         dataBuffer.push_back(frame);
+
 
         //// EOF STUDENT ASSIGNMENT
         cout << "#1 : LOAD IMAGE INTO BUFFER done" << endl;
@@ -72,19 +77,19 @@ int main(int argc, const char *argv[])
         // extract 2D keypoints from current image
         vector<cv::KeyPoint> keypoints; // create empty feature list for current image
         string detectorType = "SHITOMASI";
+        bool bVis = false;
 
         //// STUDENT ASSIGNMENT
         //// TASK MP.2 -> add the following keypoint detectors in file matching2D.cpp and enable string-based selection based on detectorType
         //// -> HARRIS, FAST, BRISK, ORB, AKAZE, SIFT
 
         if (detectorType.compare("SHITOMASI") == 0)
-        {
-            detKeypointsShiTomasi(keypoints, imgGray, false);
-        }
+            detKeypointsShiTomasi(keypoints, imgGray, bVis);
+        else if (detectorType.compare("HARRIS") == 0)
+            detKeypointsHarris(keypoints, imgGray, bVis);
         else
-        {
-            //...
-        }
+            detKeypointsModern(keypoints, imgGray, detectorType, bVis);
+
         //// EOF STUDENT ASSIGNMENT
 
         //// STUDENT ASSIGNMENT
@@ -94,8 +99,20 @@ int main(int argc, const char *argv[])
         bool bFocusOnVehicle = true;
         cv::Rect vehicleRect(535, 180, 180, 150);
         if (bFocusOnVehicle)
+        
         {
-            // ...
+            vector<cv::KeyPoint> keypoints_cropped;
+            for (int i = 0; i < keypoints.size(); i++)
+            {
+                if ((keypoints[i].pt.x < vehicleRect.x) || (keypoints[i].pt.x > ( vehicleRect.x + vehicleRect.width))) {
+                    continue;
+                }
+                if ((keypoints[i].pt.y < vehicleRect.y) || (keypoints[i].pt.y > (vehicleRect.y + vehicleRect.height))) {
+                    continue;              
+                }
+                keypoints_cropped.push_back(keypoints[i]);
+            }
+            keypoints = keypoints_cropped;
         }
 
         //// EOF STUDENT ASSIGNMENT
@@ -126,6 +143,8 @@ int main(int argc, const char *argv[])
 
         cv::Mat descriptors;
         string descriptorType = "BRISK"; // BRIEF, ORB, FREAK, AKAZE, SIFT
+
+
         descKeypoints((dataBuffer.end() - 1)->keypoints, (dataBuffer.end() - 1)->cameraImg, descriptors, descriptorType);
         //// EOF STUDENT ASSIGNMENT
 
