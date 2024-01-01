@@ -51,7 +51,7 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
     else if (descriptorType.compare("BRIEF") == 0)
     {
 
-        cv::Ptr<cv::DescriptorExtractor> descriptor = cv::BriefDescriptorExtractor::create();
+        cv::Ptr<cv::DescriptorExtractor> descriptor = cv::xfeatures2d::BriefDescriptorExtractor::create();
     }
 
         else if (descriptorType.compare("ORB") == 0)
@@ -84,7 +84,6 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
     t = ((double)cv::getTickCount() - t) / cv::getTickFrequency();
     cout << descriptorType << " descriptor extraction in " << 1000 * t / 1.0 << " ms" << endl;
 }
-q
 // Detect keypoints in image using the traditional Shi-Thomasi detector
 void detKeypointsShiTomasi(vector<cv::KeyPoint> &keypoints, cv::Mat &img, bool bVis)
 {
