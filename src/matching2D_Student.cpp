@@ -10,7 +10,7 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
     // configure matcher
     bool crossCheck = false;
     cv::Ptr<cv::DescriptorMatcher> matcher;
-    float threshold = 0.8
+    float threshold = 0.8;
 
 
     if (matcherType.compare("MAT_BF") == 0)
