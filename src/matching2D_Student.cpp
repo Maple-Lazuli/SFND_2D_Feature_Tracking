@@ -201,7 +201,7 @@ void detKeypointsModern(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, std:
         detectorName = "AKAZE";
     }
     else if (detectorType.compare("SIFT") == 0) {
-        detector = cv::SIFT::create();
+        detector = cv::xfeatures2d::SIFT::create();
         detectorName = "SIFT";
     }
         
