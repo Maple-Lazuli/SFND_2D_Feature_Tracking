@@ -29,7 +29,7 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
     }
     else if (selectorType.compare("SEL_KNN") == 0)
     { // k nearest neighbors (k=2)
-        matcher->knnMatch(descSource, matches, 2);
+        matcher->knnMatch(descSource, descRef, matches,2);
     }
 }
 
