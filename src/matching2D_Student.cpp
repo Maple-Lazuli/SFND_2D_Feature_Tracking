@@ -10,6 +10,8 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
     // configure matcher
     bool crossCheck = false;
     cv::Ptr<cv::DescriptorMatcher> matcher;
+    float threshold = 0.8
+
 
     if (matcherType.compare("MAT_BF") == 0)
     {
@@ -24,15 +26,21 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
     // perform matching task
     if (selectorType.compare("SEL_NN") == 0)
     { // nearest neighbor (best match)
+        std::vector<cv::DMatch> matches_unfiltered;
+        matcher->match(descSource, descRef, matches_unfiltered); // Finds the best match for each descriptor in desc1
 
-        matcher->match(descSource, descRef, matches); // Finds the best match for each descriptor in desc1
+        for(int i=0; i<matches_unfiltered.size(); i++)
+            if (matches_unfiltered[i].distance > threshold)
+                matches.push_back(matches_unfiltered[i]);
     }
     else if (selectorType.compare("SEL_KNN") == 0)
     { // k nearest neighbors (k=2)
-        std::vector<vector<cv::DMatch>> matches2d;
-        matcher->knnMatch(descSource, matches2d,2);
-        for(int i=0; i<matches2d.size(); i++)
-            matches.push_back(matches2d[i][0]);
+        std::vector<vector<cv::DMatch>> matches_unfiltered;
+        matcher->knnMatch(descSource, matches_unfiltered,2);
+
+        for(int i=0; i<matches_unfiltered.size(); i++)
+            if (matches_unfiltered[i][0].distance > threshold)
+                matches.push_back(matches_unfiltered[i][0]);
     }
 }
 
