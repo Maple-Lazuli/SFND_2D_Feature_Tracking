@@ -57,7 +57,7 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
         else if (descriptorType.compare("ORB") == 0)
     {
 
-        extractor = cv::xfeatures2d::ORB::create();
+        extractor = cv::ORB::create();
     }
 
         else if (descriptorType.compare("FREAK") == 0)
