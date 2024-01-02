@@ -99,9 +99,8 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
         extractor = cv::xfeatures2d::SiftDescriptorExtractor::create();
         cv::Mat dst, dst_norm, dst_norm_scaled;
         dst = cv::Mat::zeros(img.size(), CV_32FC1);
-        cv::cornerHarris(img, dst, blockSize, apertureSize, k, cv::BORDER_DEFAULT);
-        cv::normalize(dst, dst_norm, 0, 255, cv::NORM_MINMAX, CV_32FC1, cv::Mat());
-        cv::convertScaleAbs(dst_norm, dst_norm_scaled);
+        cv::normalize(img, dst, 0, 255, cv::NORM_MINMAX, CV_32FC1, cv::Mat());
+        cv::convertScaleAbs(dst, dst_norm_scaled);
         double t = (double)cv::getTickCount();
         extractor->compute(dst_norm_scaled, keypoints, descriptors);
     }
