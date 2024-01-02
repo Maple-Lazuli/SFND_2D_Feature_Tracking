@@ -64,24 +64,32 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
     {
 
         extractor = cv::xfeatures2d::BriefDescriptorExtractor::create();
+        double t = (double)cv::getTickCount();
+        extractor->compute(img, keypoints, descriptors);
     }
 
         else if (descriptorType.compare("ORB") == 0)
     {
 
         extractor = cv::ORB::create();
+        double t = (double)cv::getTickCount();
+        extractor->compute(img, keypoints, descriptors);
     }
 
         else if (descriptorType.compare("FREAK") == 0)
     {
 
         extractor = cv::xfeatures2d::FREAK::create();
+        double t = (double)cv::getTickCount();
+        extractor->compute(img, keypoints, descriptors);
     }
 
         else if (descriptorType.compare("AKAZE") == 0)
     {
 
         extractor = cv::AKAZE::create();
+        double t = (double)cv::getTickCount();
+        extractor->compute(img, keypoints, descriptors);
     }
 
         else if (descriptorType.compare("SIFT") == 0)
@@ -89,11 +97,16 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
     {
 
         extractor = cv::xfeatures2d::SiftDescriptorExtractor::create();
+        cv::Mat dst, dst_norm, dst_norm_scaled;
+        dst = cv::Mat::zeros(img.size(), CV_32FC1);
+        cv::cornerHarris(img, dst, blockSize, apertureSize, k, cv::BORDER_DEFAULT);
+        cv::normalize(dst, dst_norm, 0, 255, cv::NORM_MINMAX, CV_32FC1, cv::Mat());
+        cv::convertScaleAbs(dst_norm, dst_norm_scaled);
+        double t = (double)cv::getTickCount();
+        extractor->compute(dst_norm_scaled, keypoints, descriptors);
     }
 
     // perform feature description
-    double t = (double)cv::getTickCount();
-    extractor->compute(img, keypoints, descriptors);
     t = ((double)cv::getTickCount() - t) / cv::getTickFrequency();
     cout << descriptorType << " descriptor extraction in " << 1000 * t / 1.0 << " ms" << endl;
 }
