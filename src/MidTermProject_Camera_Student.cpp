@@ -54,8 +54,8 @@ int main(int argc, const char *argv[])
         // load image from file and convert to grayscale
         cv::Mat img, imgGray;
         img = cv::imread(imgFullFilename);
-        //cv::cvtColor(img, imgGray, cv::COLOR_BGR2GRAY);
-        cv::cvtColor(img, imgGray, CV_32F);
+        cv::cvtColor(img, imgGray, cv::COLOR_BGR2GRAY);
+        //cv::cvtColor(img, imgGray, CV_32F);
         //// STUDENT ASSIGNMENT
         //// TASK MP.1 -> replace the following code with ring buffer of size dataBufferSize
 
