@@ -88,7 +88,7 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
 
     {
 
-        extractor = cv::features2d::SiftDescriptorExtractor::create();
+        extractor = cv::xfeatures2d::SiftDescriptorExtractor::create();
     }
 
     // perform feature description
