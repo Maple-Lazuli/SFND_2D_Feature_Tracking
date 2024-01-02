@@ -1,0 +1,77 @@
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1351 keypoints in 71.9183 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 1.37317 ms
+#3 : EXTRACT DESCRIPTORS done
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1327 keypoints in 92.3263 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 2.02557 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 162 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1311 keypoints in 56.5498 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 1.34504 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 157 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1351 keypoints in 68.6674 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 1.89758 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 159 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1360 keypoints in 64.5658 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 1.9189 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 154 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1347 keypoints in 58.9252 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 1.2794 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 162 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1363 keypoints in 48.4594 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 1.30673 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 163 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1331 keypoints in 63.8774 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 1.94161 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 173 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1357 keypoints in 73.6078 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 1.91224 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 175 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1331 keypoints in 51.0595 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 1.31924 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 175 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image

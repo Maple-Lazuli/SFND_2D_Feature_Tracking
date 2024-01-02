@@ -1,0 +1,77 @@
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1351 keypoints in 77.8842 ms
+#2 : DETECT KEYPOINTS done
+AKAZE descriptor extraction in 87.967 ms
+#3 : EXTRACT DESCRIPTORS done
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1327 keypoints in 60.69 ms
+#2 : DETECT KEYPOINTS done
+AKAZE descriptor extraction in 46.5958 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 162 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1311 keypoints in 66.4454 ms
+#2 : DETECT KEYPOINTS done
+AKAZE descriptor extraction in 44.4811 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 157 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1351 keypoints in 51.3581 ms
+#2 : DETECT KEYPOINTS done
+AKAZE descriptor extraction in 44.5155 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 159 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1360 keypoints in 47.877 ms
+#2 : DETECT KEYPOINTS done
+AKAZE descriptor extraction in 44.0422 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 154 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1347 keypoints in 50.4859 ms
+#2 : DETECT KEYPOINTS done
+AKAZE descriptor extraction in 43.8448 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 162 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1363 keypoints in 49.57 ms
+#2 : DETECT KEYPOINTS done
+AKAZE descriptor extraction in 44.2075 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 163 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1331 keypoints in 50.3607 ms
+#2 : DETECT KEYPOINTS done
+AKAZE descriptor extraction in 43.0838 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 173 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1357 keypoints in 48.7999 ms
+#2 : DETECT KEYPOINTS done
+AKAZE descriptor extraction in 42.8698 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 175 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+AKAZE detection with n=1331 keypoints in 49.0919 ms
+#2 : DETECT KEYPOINTS done
+AKAZE descriptor extraction in 44.9361 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 175 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image

@@ -1,0 +1,77 @@
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 3.82887 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 1.07566 ms
+#3 : EXTRACT DESCRIPTORS done
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 3.52993 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 0.580986 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 82 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 7.70943 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 0.570177 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 93 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 3.15763 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 0.611642 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 95 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 2.88686 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 0.61517 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 103 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 2.90054 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 0.664459 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 101 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 3.09911 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 0.679453 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 115 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 3.02168 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 0.674871 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 119 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 4.0452 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 0.687643 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 118 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 4.60726 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 0.659734 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 116 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image

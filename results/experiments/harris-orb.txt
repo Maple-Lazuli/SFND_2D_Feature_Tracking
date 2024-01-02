@@ -1,0 +1,77 @@
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=339 keypoints in 7.97837 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 2.41091 ms
+#3 : EXTRACT DESCRIPTORS done
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=286 keypoints in 6.18376 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 0.437342 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 51 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=349 keypoints in 12.1957 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 0.947864 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 41 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=356 keypoints in 8.86374 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 0.55791 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 63 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=521 keypoints in 12.1032 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 0.765488 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 58 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=2611 keypoints in 35.7115 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 0.972122 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 85 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=200 keypoints in 11.6488 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 0.886216 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 322 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=806 keypoints in 26.7998 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 0.631866 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 38 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=572 keypoints in 11.2597 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 0.792031 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 136 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=1471 keypoints in 18.9634 ms
+#2 : DETECT KEYPOINTS done
+ORB descriptor extraction in 0.929262 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 96 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image

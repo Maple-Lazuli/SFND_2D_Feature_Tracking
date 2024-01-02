@@ -1,0 +1,77 @@
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=339 keypoints in 9.90952 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 10.9388 ms
+#3 : EXTRACT DESCRIPTORS done
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=286 keypoints in 6.27934 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 15.1184 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 51 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=349 keypoints in 10.0339 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 10.9914 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 41 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=356 keypoints in 9.80618 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 11.1767 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 63 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=521 keypoints in 15.8481 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 15.9767 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 58 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=2611 keypoints in 38.5563 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 17.0766 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 85 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=200 keypoints in 8.73409 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 11.8196 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 322 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=806 keypoints in 10.9396 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 12.5903 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 38 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=572 keypoints in 18.6644 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 11.7024 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 136 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+Harris detection with n=1471 keypoints in 30.4492 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 14.5238 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 96 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image

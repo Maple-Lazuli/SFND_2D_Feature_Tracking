@@ -1,0 +1,77 @@
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 4.23811 ms
+#2 : DETECT KEYPOINTS done
+FREAK descriptor extraction in 17.5223 ms
+#3 : EXTRACT DESCRIPTORS done
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 3.57961 ms
+#2 : DETECT KEYPOINTS done
+FREAK descriptor extraction in 13.9598 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 45 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 5.23001 ms
+#2 : DETECT KEYPOINTS done
+FREAK descriptor extraction in 14.689 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 53 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 6.38457 ms
+#2 : DETECT KEYPOINTS done
+FREAK descriptor extraction in 13.0267 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 56 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 6.29729 ms
+#2 : DETECT KEYPOINTS done
+FREAK descriptor extraction in 12.7301 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 65 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 4.47065 ms
+#2 : DETECT KEYPOINTS done
+FREAK descriptor extraction in 14.7977 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 55 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 5.33753 ms
+#2 : DETECT KEYPOINTS done
+FREAK descriptor extraction in 13.2861 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 64 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 6.01749 ms
+#2 : DETECT KEYPOINTS done
+FREAK descriptor extraction in 12.4424 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 66 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 5.77506 ms
+#2 : DETECT KEYPOINTS done
+FREAK descriptor extraction in 12.4501 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 70 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 6.78588 ms
+#2 : DETECT KEYPOINTS done
+FREAK descriptor extraction in 12.8726 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 71 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image

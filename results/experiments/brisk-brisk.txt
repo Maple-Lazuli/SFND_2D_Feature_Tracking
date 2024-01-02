@@ -1,0 +1,77 @@
+#1 : LOAD IMAGE INTO BUFFER done
+BRISK detection with n=2757 keypoints in 43.7513 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 2.17493 ms
+#3 : EXTRACT DESCRIPTORS done
+#1 : LOAD IMAGE INTO BUFFER done
+BRISK detection with n=2777 keypoints in 18.8029 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 2.83867 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 254 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+BRISK detection with n=2741 keypoints in 18.6152 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 1.28659 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 274 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+BRISK detection with n=2735 keypoints in 17.7354 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 1.33923 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 276 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+BRISK detection with n=2757 keypoints in 18.0114 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 1.36804 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 275 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+BRISK detection with n=2695 keypoints in 18.2913 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 1.3493 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 293 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+BRISK detection with n=2715 keypoints in 17.9299 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 1.38047 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 275 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+BRISK detection with n=2628 keypoints in 17.4389 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 1.29084 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 289 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+BRISK detection with n=2639 keypoints in 18.0773 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 1.25757 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 268 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+BRISK detection with n=2672 keypoints in 17.8649 ms
+#2 : DETECT KEYPOINTS done
+BRISK descriptor extraction in 1.33533 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 260 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image

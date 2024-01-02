@@ -76,9 +76,9 @@ int main(int argc, const char *argv[])
 
         // extract 2D keypoints from current image
         vector<cv::KeyPoint> keypoints; // create empty feature list for current image
-        //######################################UPDATE#####################################################################
-        string detectorType = "SIFT"; //######################################UPDATE#####################################################################
-        //######################################UPDATE#####################################################################
+
+        string detectorType = "FAST"; 
+  
         bool bVis = false;
 
         //// STUDENT ASSIGNMENT
@@ -144,9 +144,7 @@ int main(int argc, const char *argv[])
         //// -> BRIEF, ORB, FREAK, AKAZE, SIFT
 
         cv::Mat descriptors;
-        //######################################UPDATE#####################################################################
-        string descriptorType = "ORB"; //BRISK, BRIEF, ORB, FREAK, AKAZE, SIFT
-        //######################################UPDATE#####################################################################
+        string descriptorType = "BRIEF"; //BRISK, BRIEF, ORB, FREAK, AKAZE, SIFT
 
 
         descKeypoints((dataBuffer.end() - 1)->keypoints, (dataBuffer.end() - 1)->cameraImg, descriptors, descriptorType);

@@ -1,0 +1,77 @@
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 5.9937 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 29.8109 ms
+#3 : EXTRACT DESCRIPTORS done
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 2.92003 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 25.3496 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 91 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 5.27816 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 31.7492 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 102 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 8.03337 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 31.3357 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 106 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 4.82712 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 27.3552 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 113 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 8.40398 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 32.194 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 109 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 5.85344 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 32.3364 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 124 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 8.95238 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 33.4179 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 129 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 8.44966 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 32.8292 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 127 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
+#1 : LOAD IMAGE INTO BUFFER done
+ORB detection with n=500 keypoints in 6.10952 ms
+#2 : DETECT KEYPOINTS done
+SIFT descriptor extraction in 29.9803 ms
+#3 : EXTRACT DESCRIPTORS done
+Matched 124 keypoints using SEL_NN
+#4 : MATCH KEYPOINT DESCRIPTORS done
+Press key to continue to next image
