@@ -42,6 +42,8 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
             if (matches_unfiltered[i][0].distance > threshold)
                 matches.push_back(matches_unfiltered[i][0]);
     }
+
+    cout << "Matched " << matches.size() << " keypoints using " << selectorType << endl;
 }
 
 // Use one of several types of state-of-art descriptors to uniquely identify keypoints

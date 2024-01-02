@@ -178,6 +178,10 @@ int main(int argc, const char *argv[])
 
             cout << "#4 : MATCH KEYPOINT DESCRIPTORS done" << endl;
 
+            cout << "#4 : MATCH KEYPOINT DESCRIPTORS done" << endl;
+
+            
+
             // visualize matches between current and previous image
             bVis = true;
             if (bVis)
