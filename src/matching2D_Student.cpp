@@ -15,11 +15,16 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
 
     if (matcherType.compare("MAT_BF") == 0)
     {
-        int normType = cv::NORM_HAMMING;
+        int normType = descriptorType.compare("DES_BINARY") == 0 ? cv::NORM_HAMMING : cv::NORM_L2;
         matcher = cv::BFMatcher::create(normType, crossCheck);
     }
     else if (matcherType.compare("MAT_FLANN") == 0)
     {
+
+        if (descSource.type()!= CV_32F){ // Fix for the openCV bug mentioned in the instructions
+            descSource.convertTo(descSource, CV_32F);
+            descRef.convertTo(descRef, CV_32F);
+        }
         matcher = cv::FlannBasedMatcher::create();
     }
 
@@ -28,19 +33,15 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
     { // nearest neighbor (best match)
         std::vector<cv::DMatch> matches_unfiltered;
         matcher->match(descSource, descRef, matches_unfiltered); // Finds the best match for each descriptor in desc1
-
-        for(int i=0; i<matches_unfiltered.size(); i++)
-            if (matches_unfiltered[i].distance > threshold)
-                matches.push_back(matches_unfiltered[i]);
     }
     else if (selectorType.compare("SEL_KNN") == 0)
     { // k nearest neighbors (k=2)
         std::vector<vector<cv::DMatch>> matches_unfiltered;
         matcher->knnMatch(descSource, matches_unfiltered,2);
 
-        for(int i=0; i<matches_unfiltered.size(); i++)
-            if (matches_unfiltered[i][0].distance > threshold)
-                matches.push_back(matches_unfiltered[i][0]);
+        for (auto it=matches_unfiltered.begin(); it != matches_unfiltered.end(); it++)
+            if ((*it)[0].distance <= threshold * (*it)[1].distance)
+                matches.push_back((*it)[0]);
     }
 
     cout << "Matched " << matches.size() << " keypoints using " << selectorType << endl;
