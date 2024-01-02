@@ -77,7 +77,7 @@ int main(int argc, const char *argv[])
         // extract 2D keypoints from current image
         vector<cv::KeyPoint> keypoints; // create empty feature list for current image
         //######################################UPDATE#####################################################################
-        string detectorType = "HARRIS"; //######################################UPDATE#####################################################################
+        string detectorType = "FAST"; //######################################UPDATE#####################################################################
         //######################################UPDATE#####################################################################
         bool bVis = false;
 
@@ -145,7 +145,7 @@ int main(int argc, const char *argv[])
 
         cv::Mat descriptors;
         //######################################UPDATE#####################################################################
-        string descriptorType = "SIFT"; //BRISK, BRIEF, ORB, FREAK, AKAZE, SIFT
+        string descriptorType = "BRISK"; //BRISK, BRIEF, ORB, FREAK, AKAZE, SIFT
         //######################################UPDATE#####################################################################
 
 
