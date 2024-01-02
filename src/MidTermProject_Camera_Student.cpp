@@ -77,7 +77,7 @@ int main(int argc, const char *argv[])
         // extract 2D keypoints from current image
         vector<cv::KeyPoint> keypoints; // create empty feature list for current image
         //######################################UPDATE#####################################################################
-        string detectorType = "FAST"; //######################################UPDATE#####################################################################
+        string detectorType = "BRISK"; //######################################UPDATE#####################################################################
         //######################################UPDATE#####################################################################
         bool bVis = false;
 
@@ -145,7 +145,7 @@ int main(int argc, const char *argv[])
 
         cv::Mat descriptors;
         //######################################UPDATE#####################################################################
-        string descriptorType = "SIFT"; //BRISK, BRIEF, ORB, FREAK, AKAZE, SIFT
+        string descriptorType = "BRISK"; //BRISK, BRIEF, ORB, FREAK, AKAZE, SIFT
         //######################################UPDATE#####################################################################
 
 
@@ -164,7 +164,7 @@ int main(int argc, const char *argv[])
 
             vector<cv::DMatch> matches;
             string matcherType = "MAT_BF"; // MAT_BF, MAT_FLANN
-            string descriptorType = "DES_HOG"; // DES_BINARY, DES_HOG
+            string descriptorType = "DES_BINARY"; // DES_BINARY, DES_HOG
             string selectorType = "SEL_NN";       // SEL_NN, SEL_KNN
 
             //// STUDENT ASSIGNMENT
