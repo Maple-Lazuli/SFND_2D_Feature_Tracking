@@ -100,7 +100,7 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
         extractor = cv::xfeatures2d::SiftDescriptorExtractor::create();
         cv::Mat dst, dst_norm, dst_norm_scaled;
         dst = cv::Mat::zeros(img.size(), CV_32FC1);
-        cv::normalize(dst, dst, 0, 255, cv::NORM_MINMAX, CV_32F, cv::Mat());
+        cv::normalize(dst, dst, 0, 255, cv::NORM_MINMAX, CV_32S, cv::Mat());
         cv::convertScaleAbs(dst, dst_norm_scaled);
         extractor->compute(dst_norm_scaled, keypoints, descriptors);
     }
