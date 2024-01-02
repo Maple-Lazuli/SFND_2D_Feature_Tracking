@@ -81,7 +81,7 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
         else if (descriptorType.compare("AKAZE") == 0)
     {
 
-        extractor = cv::AKAZE::create();
+        extractor = cv::AKAZE::create(threshold = 0.8);
     }
 
         else if (descriptorType.compare("SIFT") == 0)
