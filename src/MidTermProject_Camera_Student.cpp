@@ -77,7 +77,7 @@ int main(int argc, const char *argv[])
         // extract 2D keypoints from current image
         vector<cv::KeyPoint> keypoints; // create empty feature list for current image
         //######################################UPDATE#####################################################################
-        string detectorType = "SIFT"; //######################################UPDATE#####################################################################
+        string detectorType = "SHITOMASI"; //######################################UPDATE#####################################################################
         //######################################UPDATE#####################################################################
         bool bVis = false;
 
