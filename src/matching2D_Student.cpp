@@ -50,7 +50,6 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
 void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descriptors, string descriptorType)
 {
     // select appropriate descriptor
-    double t = (double)cv::getTickCount();
     cv::Ptr<cv::DescriptorExtractor> extractor;
     if (descriptorType.compare("BRISK") == 0)
     {
@@ -65,32 +64,24 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
     {
 
         extractor = cv::xfeatures2d::BriefDescriptorExtractor::create();
-        double t = (double)cv::getTickCount();
-        extractor->compute(img, keypoints, descriptors);
     }
 
         else if (descriptorType.compare("ORB") == 0)
     {
 
         extractor = cv::ORB::create();
-        double t = (double)cv::getTickCount();
-        extractor->compute(img, keypoints, descriptors);
     }
 
         else if (descriptorType.compare("FREAK") == 0)
     {
 
         extractor = cv::xfeatures2d::FREAK::create();
-        double t = (double)cv::getTickCount();
-        extractor->compute(img, keypoints, descriptors);
     }
 
         else if (descriptorType.compare("AKAZE") == 0)
     {
 
         extractor = cv::AKAZE::create();
-        double t = (double)cv::getTickCount();
-        extractor->compute(img, keypoints, descriptors);
     }
 
         else if (descriptorType.compare("SIFT") == 0)
@@ -98,14 +89,11 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
     {
 
         extractor = cv::xfeatures2d::SiftDescriptorExtractor::create();
-        cv::Mat dst, dst_norm, dst_norm_scaled;
-        dst = cv::Mat::zeros(img.size(), CV_32FC1);
-        cv::normalize(dst, dst, 0, 255, cv::NORM_MINMAX, CV_32S, cv::Mat());
-        cv::convertScaleAbs(dst, dst_norm_scaled);
-        extractor->compute(dst_norm_scaled, keypoints, descriptors);
     }
 
     // perform feature description
+    double t = (double)cv::getTickCount();
+    extractor->compute(img, keypoints, descriptors);
     t = ((double)cv::getTickCount() - t) / cv::getTickFrequency();
     cout << descriptorType << " descriptor extraction in " << 1000 * t / 1.0 << " ms" << endl;
 }
