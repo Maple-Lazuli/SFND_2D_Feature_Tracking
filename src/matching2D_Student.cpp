@@ -50,6 +50,7 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
 void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descriptors, string descriptorType)
 {
     // select appropriate descriptor
+    double t = (double)cv::getTickCount();
     cv::Ptr<cv::DescriptorExtractor> extractor;
     if (descriptorType.compare("BRISK") == 0)
     {
@@ -99,9 +100,8 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
         extractor = cv::xfeatures2d::SiftDescriptorExtractor::create();
         cv::Mat dst, dst_norm, dst_norm_scaled;
         dst = cv::Mat::zeros(img.size(), CV_32FC1);
-        cv::normalize(img, dst, 0, 255, cv::NORM_MINMAX, CV_32FC1, cv::Mat());
+        cv::normalize(dst, dst, 0, 255, cv::NORM_MINMAX, CV_32FC1, cv::Mat());
         cv::convertScaleAbs(dst, dst_norm_scaled);
-        double t = (double)cv::getTickCount();
         extractor->compute(dst_norm_scaled, keypoints, descriptors);
     }
 
