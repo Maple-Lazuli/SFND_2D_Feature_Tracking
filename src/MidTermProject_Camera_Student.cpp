@@ -145,7 +145,7 @@ int main(int argc, const char *argv[])
 
         cv::Mat descriptors;
         //######################################UPDATE#####################################################################
-        string descriptorType = "BRIEF"; //BRISK, BRIEF, ORB, FREAK, AKAZE, SIFT
+        string descriptorType = "ORB"; //BRISK, BRIEF, ORB, FREAK, AKAZE, SIFT
         //######################################UPDATE#####################################################################
 
 
