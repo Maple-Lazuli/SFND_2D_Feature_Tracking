@@ -76,7 +76,9 @@ int main(int argc, const char *argv[])
 
         // extract 2D keypoints from current image
         vector<cv::KeyPoint> keypoints; // create empty feature list for current image
-        string detectorType = "SIFT";
+        //######################################UPDATE#####################################################################
+        string detectorType = "SHITOMASI"; //######################################UPDATE#####################################################################
+        //######################################UPDATE#####################################################################
         bool bVis = false;
 
         //// STUDENT ASSIGNMENT
@@ -142,7 +144,9 @@ int main(int argc, const char *argv[])
         //// -> BRIEF, ORB, FREAK, AKAZE, SIFT
 
         cv::Mat descriptors;
-        string descriptorType = "BRISK"; // BRIEF, ORB, FREAK, AKAZE, SIFT
+        //######################################UPDATE#####################################################################
+        string descriptorType = "BRISK"; //BRISK, BRIEF, ORB, FREAK, AKAZE, SIFT
+        //######################################UPDATE#####################################################################
 
 
         descKeypoints((dataBuffer.end() - 1)->keypoints, (dataBuffer.end() - 1)->cameraImg, descriptors, descriptorType);
@@ -177,11 +181,7 @@ int main(int argc, const char *argv[])
             (dataBuffer.end() - 1)->kptMatches = matches;
 
             cout << "#4 : MATCH KEYPOINT DESCRIPTORS done" << endl;
-
-            cout << "#4 : MATCH KEYPOINT DESCRIPTORS done" << endl;
-
             
-
             // visualize matches between current and previous image
             bVis = true;
             if (bVis)
