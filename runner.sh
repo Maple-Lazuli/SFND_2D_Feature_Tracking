@@ -1,6 +1,3 @@
 #!/bin/bash
-git pull
-mkdir build
 cd build
-cmake ..
-make
+./2D_feature_tracking
