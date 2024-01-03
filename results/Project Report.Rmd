@@ -3,9 +3,9 @@ title: "2D Feature Tracking Results Analysis"
 author: "Ada Lazuli"
 date: "2024-01-01"
 output:
+  pdf_document: default
   html_document:
     code_folding: hide
-  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -16,7 +16,62 @@ library(dplyr)
 set.seed(101011)
 ```
 
-## Part 1 - Detector Performance
+## Code Updates and Implementation
+
+### Data Loading
+
+Implementing an input buffer for holding loaded images was the first action item completed for the project. The buffer was implemented as a first in first out structure that holds a limit quantity of images, with that quantity being constrained by a variable set within the application.
+
+When new images are load that would exceed the buffer's specified size, the oldest images are removed from the buffer. The benefit of this being that system resources for data storage are minimized in memory, leaving more resources for processing.
+
+### Detector Implementation
+
+The second phase of the project was it implement a plethora of detectors for keypoint generation on the images loaded in the buffer.
+
+The first detector implemented was __HARRIS__. HARRIS took the most work to implement and utilizes triple layer iteration, which could yield performance issues. Additionally, the HARRIS implementation relied several functions found within openCV 4.1
+
+The remaining detectors, listed below, were implemented strictly using openCV:
+
+1. FAST
+2. BRISK
+3. ORB
+4. AKAZE
+5. SIFT
+
+### Input Cropping
+
+The third phase of was to crop the keypoints to a bounding box that contains a singular car. This step is important for later evaluation of detector performance and keypoint matching since the ground truth that the vehicle is the same throughout the images is known.
+
+The cropping feature was implemented by iterating through through the generated keypoints and removing any keypoints that were outside of the bounding box.
+
+### Descriptor Implementation
+
+The fourth phase was to implement several descriptors to process the keypoints. Using functions provided by openCV, the following descriptors were added to the project:
+
+1. BRISK
+2. BRIEF
+3. ORB
+4. FREAK
+5. AKAZE
+6. SIFT
+
+### Keypoint Matching
+
+The fifth phase was to implement methods for matching processed keypoints between consecutive images. To accomplish this, FLANN and K-Nearest Neighbor matching was implemented in the project.
+
+FLANN was implemented using openCV functions, however, there was a slight complication where varying data types needed to be controlled for. Depending on the descriptor used, there were moments when the data type changed from the expected 32 bit floating point value. This was controlled for by utilizing a conditional to test for the incorrect data type then convert to a float 32 using openCV functions.
+
+Additionally, the K-Nearest Neighbor matcher was implemented by using a the `knnMatch` method of the openCV DescriptorMatcher class.
+
+## Filtering
+
+The sixth and final update to the project was the implmentation of a match filter. The match filter was implemented by iterating over the matched keypoints and evalute the match distance. The match distance would be checked against a specified threshold and used for determining whether to keep or drop the match.
+
+***
+
+## Performance Analysis
+
+### Detector Performance
 
 The purpose of this section is to review the performance of the various detectors implemented in the project and draw conclusions around performance. The quantity of __keypoints__ generated and __duration__ of detection will be the only metrics considered in this section.
 
@@ -36,7 +91,7 @@ Additionally, the following code block shows that 6 detectors are uniformly repr
 df %>% count(detector)
 ```
 
-A box and whisker plot was used to review the distribution of keypoint generation by the various detectors for 10 images. The plot shows that most of the detectors were consistent, with _FAST_ tending to generate the most keypoints. The _HARRIS_ detector was implemented manually and exhibited the highest variability.
+A box and whisker plot was used to review the distribution of keypoint generation by the various detectors for 10 images. The plot shows that most of the detectors were consistent, with _FAST_ tending to generate the most keypoints. The _HARRIS_ detector was implemented with some custom flow control and exhibited the highest variability.
 
 ```{r, out.width="90%"}
 ggplot(df, aes(x = detector, y = keypoints)) + geom_boxplot() + xlab("Detector") + 
@@ -50,7 +105,7 @@ ggplot(df, aes(x = detector, y = duration)) + geom_boxplot() + xlab("Detector") 
   ylab("Time (ms)") + ggtitle("Duration of Generation By Detector")
 ```
 
-## Part 2 - Detector Descriptor Performance
+### Detector Descriptor Performance
 
 A second CSV was created during experimentation that contains details about various runs using different combinations of detectors and descriptors. Additionally, the keypoint matching algorithm and the images used were held constant throughout the experiments.
 
@@ -101,5 +156,12 @@ ggplot(df %>% filter(detector == 'fast'), aes(x = descriptor, y = descriptor.dur
 
 ## Conclusion
 
-After reviewing all of the data collected, the best pairing of detector and descriptor appears to be __FAST__ with __BRIEF__. The combination results in the highest keypoint generation, matching, and shortest duration. 
+After reviewing all of the data collected, the top three pairings of detector and descriptor would to be:
+
+1.  __FAST__ with __BRIEF__.
+2. __FAST__ with __ORB__.
+3. __FAST__ with __BRISK__.
+
+
+Overall, using the __FAST__ with __BRIEF__ is the best pairing of detector and descriptor. This combination results in the highest keypoint generation, matching, and shortest duration. 
 
